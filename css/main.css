@@ -27,16 +27,16 @@
     align-items: center;
 }
 
-.links > ul > li {
+.links > ul > li > a {
     margin: 0px 30px;
     position: relative;
 }
 
-.links > ul > li:hover {
+.links > ul > li > a:hover {
     cursor: pointer;
 }
 
-.links > ul > li::before {
+.links > ul > li > a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -49,7 +49,7 @@
     transition: background-size .3s ease-in; /* duration and timing style of animation */
 }
 
-.links > ul > li:hover::before {
+.links > ul > li > a:hover::before {
     background-size: 100% 2px;
     
 }
@@ -57,10 +57,11 @@
 .links > ul > li > a {
     text-decoration: none;
     color: black;
+    height: inherit;
+    width: inherit;
 }
 
 .container {
-    height: 80vh;
 }
 
 .footer {

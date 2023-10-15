@@ -17,7 +17,6 @@ if($_POST) {
    $email = trim(stripslashes($_POST['email']));
    $subject = trim(stripslashes($_POST['subject']));
    $contact_message = trim(stripslashes($_POST['message']));
-
    $organization = trim(stripslashes($_POST['organization']));
    $budget = trim(stripslashes($_POST['budget']));
    $date = trim(stripslashes($_POST['date']));
