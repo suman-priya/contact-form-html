@@ -20,6 +20,11 @@ function startCounting(){
 }
 startCounting();
 
+function handleSubmit() {
+    var time_spent = document.querySelector('.time_spent');
+    time_spent.value = timeSpentOnSite;
+}
+
 /* ---------- Stop the timer when the window/tab is inactive ---------- */
 
 var stopCountingWhenWindowIsInactive = true; 
